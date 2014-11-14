@@ -1,0 +1,68 @@
+"#options": {
+	opacity: 0
+},
+"ScrollView[platform=ios formFactor=handheld]": {
+	layout: 'vertical',
+	backgroundColor: '#163318',
+	height: '60%',
+	width: '60%',
+	borderColor: '#fff',
+	borderRadius: 10
+},
+"ScrollView[platform=ios formFactor=tablet]": {
+	layout: 'vertical',
+	backgroundColor: '#163318',
+	height: '40%',
+	width: '40%',
+	borderColor: '#fff',
+	borderRadius: 10
+},
+"TextField": {
+	height: '10%',
+	top: '5%',
+	width: "80%",
+	keyboardType: Titanium.UI.KEYBOARD_DEFAULT,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE,
+	borderStyle: Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+},
+"Button":{
+	top: '5%',
+	height: "10%",
+	width: "60%",
+	borderColor: '#fff',
+	borderRadius: 10,
+	backgroundColor: '#215525',
+	color: '#fff'
+},
+"Label":{
+	width: Ti.UI.SIZE,
+	top: "5%",
+	height: "5%",
+	color: "#fff",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#clipboardLbl": {
+	color: "#bbb",
+	font: {
+		size: 4
+	},
+	top: "2%"
+},
+"#cancel": {
+	top: '80%',
+	height: "7%",
+	width: "55%",
+	borderColor: '#fff',
+	borderRadius: 10,
+	backgroundColor: '#215525'
+},
+"#separator": {
+	width: '90%',
+	height: '1dp',
+	backgroundColor: '#5C705D',
+	top: "5%",
+	bottom: 0
+},
+"#blank": {
+	height: '15%'
+}

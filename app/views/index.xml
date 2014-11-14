@@ -1,0 +1,30 @@
+<Alloy>
+	
+	<Window id="win1" platform="ios" backgroundImage="/foosball750x1334.png" onFocus="drawTable" > <!-- /foosball320x480dark.png -->
+		<View id="back" backgroundColor="black" opacity="0"></View>
+		<View id="topbar" opacity="0"></View>
+		<View id="win2" top="12%" opacity="0">
+			<Label id="info">Players</Label>
+			
+			<TableView id="table" allowSelection="true" onClick="rowClick" editable="true" />
+			<Button id="options" class="topButton" onClick="options" >Options</Button>
+			<Button id="clear" class="topButton" onClick="clearSelected" >Clear Selection</Button>
+			<Button id="generate" class="topButton" onClick="genTeams" >Generate Teams</Button>
+			<Button id="stats" class="topButton" onClick="stats" >View Wins</Button>
+			
+			<Label id="bindiv">Most Balanced (Individuals)</Label>
+			<Button id="bindiv1"  class="teamButton" title="" onClick="setWin"></Button>
+			<Label id="bindivvs">vs</Label>
+			<Button id="bindiv2" class="teamButton" title="" onClick="setWin"></Button>
+			<Label id="bteams">Most Balanced (Teams)</Label>
+			<Button id="bteams1" class="teamButton" title="" onClick="setWin"></Button>
+			<Label id="bteamsvs">vs</Label>
+			<Button id="bteams2" class="teamButton" title="" onClick="setWin"></Button>
+			<Label id="rteams">Random Teams</Label>
+			<Button id="rteams1" class="teamButton" title="" onClick="setWin"></Button>
+			<Label id="rteamsvs">vs</Label>
+			<Button id="rteams2" class="teamButton" title="" onClick="setWin"></Button>
+		
+		</View>
+	</Window>
+</Alloy>

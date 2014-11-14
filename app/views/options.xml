@@ -1,0 +1,20 @@
+<Alloy>
+    <Window id="options" title="Options">
+    	<View backgroundColor="black" opacity="0.7"></View>
+    	<ScrollView>
+    		<Label id="addLbl">Add Player</Label>
+    		<TextField id="playerName" hintText="Player Name" />
+			<Button id="save" title="Add" onClick="save"></Button>
+			<View id="separator" />
+			
+			<Label id="databaseLbl">Database</Label>
+			<Button id="exportBtn" title="Export" onClick="exportDB"></Button>
+			<Button id="importBtn" title="Import" onClick="importDB"></Button>
+			<Label id="clipboardLbl">To/From clipboard</Label>
+			<View id="separator" />
+			
+			<View id="blank" />
+		</ScrollView>
+		<Button id="cancel" title="Cancel" onClick="closeWindow"></Button>
+    </Window>
+</Alloy>

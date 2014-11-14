@@ -1,0 +1,7 @@
+"TableViewRow": {
+	layout : "horizontal",
+	height: "22%",
+	color: "#fff",
+	right: 20,
+	backgroundColor: '#163318'
+}

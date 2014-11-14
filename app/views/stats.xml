@@ -1,0 +1,27 @@
+<Alloy>
+    <Window id="win" title="Stats" opacity="0" >
+    	<View backgroundColor="black" opacity="0.7"></View>
+    	<ScrollView>
+    		<Label id="lbl">Wins</Label>
+    		<Label id="p1prompt" ></Label>
+    		<!-- <View id="p1ratio" class="ratio" >
+    			<Label id="p1bluebar" class="bluebar"/>
+    		</View> -->
+    		<Label id="p1text" class="percent" />
+    		
+    		<Label id="p2prompt" top="5%" ></Label>
+    		<!-- <View id="p2ratio" class="ratio" >
+    			<Label id="p2bluebar" class="bluebar"/>
+    		</View> -->
+    		<Label id="p2text" class="percent"/>
+    		
+    		<Label id="tprompt"></Label>
+    		<!-- <View id="tratio" class="ratio" >
+    			<Label id="tbluebar" class="bluebar"/>
+    		</View> -->
+    		<Label id="ttext" class="percent"/>
+    		
+			<Button id="confirm" title="Ok" onClick="closeWindow"></Button>
+		</ScrollView>
+    </Window>
+</Alloy>
