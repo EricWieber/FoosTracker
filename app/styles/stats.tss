@@ -31,4 +31,22 @@
 	borderRadius: 10,
 	backgroundColor: '#215525',
 	color: '#fff'
-}
+},
+".ratio": {
+	borderColor: 'black',
+	borderRadius: 5,
+	width: "80%",
+	right: "10%",
+	height: Ti.UI.SIZE,
+	backgroundColor: 'red'
+},
+".bluebar": {
+	width: "50%",
+	left: 0,
+	height: Ti.UI.SIZE,
+	backgroundColor: 'blue',
+	borderColor: 'white'
+},
+/*".percent": {
+	top: "5%"
+}*/

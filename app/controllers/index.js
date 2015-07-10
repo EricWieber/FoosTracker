@@ -410,31 +410,3 @@ Ti.App.addEventListener('clear', function(event) {
 Ti.App.addEventListener('showStats', function(event) {
  	stats("ok", event.team, event.winners);
 });
-
-Ti.App.addEventListener('removeRow', function(e) {
- 	string = JSON.parse(file.read().text);
-	
-	var remove = e.title.split(", ");
-	
-	for (x in remove){
-		for (var y=0; y<string['Teams'].length; y++){
-			if ( string['Teams'][y].p1 == remove[x] || string['Teams'][y].p2 == remove[x]){
-				string['Teams'].splice(y, 1);
-				y--;
-			}
-		}
-		for (var z=0; z<string['Players'].length; z++){
-			if ( string['Players'][z].name == remove[x]){
-				string['Players'].splice(z, 1);
-				z--;
-			}
-		}
-	}
-	
-	if (!file.write(JSON.stringify(string))){
-		alert("Failed to update info");
-	}
-	
-	clearSelected();
-	drawTable();
-});

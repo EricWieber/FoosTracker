@@ -7,6 +7,11 @@
 			<Button id="save" title="Add" onClick="save"></Button>
 			<View id="separator" />
 			
+			<Label id="selectedLbl">Selected Players:</Label>
+			<Label id="selected" />
+			<Button id="removePlayers" title="Delete" onClick="removePlayers"></Button>
+			<View id="separator" />
+			
 			<Label id="databaseLbl">Database</Label>
 			<Button id="exportBtn" title="Export" onClick="exportDB"></Button>
 			<Button id="importBtn" title="Import" onClick="importDB"></Button>

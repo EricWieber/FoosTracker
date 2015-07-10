@@ -7,7 +7,3 @@ if (args != {}) {
 	$.row.selected = args.selected;
 	//$.check.visible = args.selected;
 }
-
-$.row.addEventListener("delete", function(){
-	Ti.App.fireEvent("removeRow", {title: $.row.title});
-});

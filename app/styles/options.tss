@@ -48,6 +48,18 @@
 	},
 	top: "2%"
 },
+"#selected":{
+	height: "auto",
+},
+"#removePlayers":{
+	top: '5%',
+	height: "10%",
+	width: "60%",
+	color: "red",
+	borderColor: '#fff',
+	borderRadius: 10,
+	backgroundColor: '#215525'
+},
 "#cancel": {
 	top: '80%',
 	height: "7%",

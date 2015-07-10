@@ -6,8 +6,8 @@
 		<View id="win2" top="12%" opacity="0">
 			<Label id="info">Players</Label>
 			
-			<TableView id="table" allowSelection="true" onClick="rowClick" editable="true" />
-			<Button id="options" class="topButton" onClick="options" >Options</Button>
+			<TableView id="table" allowSelection="true" onClick="rowClick" />
+			<Button id="options" class="topButton" onClick="options" >Configure</Button>
 			<Button id="clear" class="topButton" onClick="clearSelected" >Clear Selection</Button>
 			<Button id="generate" class="topButton" onClick="genTeams" >Generate Teams</Button>
 			<Button id="stats" class="topButton" onClick="stats" >View Wins</Button>

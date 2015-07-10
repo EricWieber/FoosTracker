@@ -3,6 +3,12 @@ var args = arguments[0] || {};
 var file = args.file;
 var players = args.players;
 
+
+$.selected.text = players;
+var deleted = 3;
+if (players == "")
+	$.removePlayers.opacity = 0.5;
+
 var startupAnimation = Titanium.UI.createAnimation({
     opacity: 1,
     duration: 250
@@ -45,6 +51,42 @@ function save(){
 		calert("Error", "Failed to update info");
 	}
 	closeWindow();
+}
+
+function removePlayers(){
+	var string = JSON.parse(file.read().text);
+
+	if (players == "")
+		return;
+		
+	if (deleted > 1){
+		deleted--;
+		$.removePlayers.title = "Delete ("+deleted+")";
+		return;
+	}
+	
+	var remove = players.split(", ");
+	
+	for (x in remove){
+		for (var y=0; y<string['Teams'].length; y++){
+			if ( string['Teams'][y].p1 == remove[x] || string['Teams'][y].p2 == remove[x]){
+				string['Teams'].splice(y, 1);
+				y--;
+			}
+		}
+		for (var z=0; z<string['Players'].length; z++){
+			if ( string['Players'][z].name == remove[x]){
+				string['Players'].splice(z, 1);
+				z--;
+			}
+		}
+	}
+	
+	if (!file.write(JSON.stringify(string))){
+		alert("Failed to update info");
+	}
+	closeWindow();
+	Ti.App.fireEvent("clear", {});
 }
 
 function exportDB() {
